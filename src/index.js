@@ -16,6 +16,7 @@ class ContaCorrente {
 
         if (saldoValid && valorSaqueValid) {
             this.#saldo -= valorSaque;
+            return valorSaque;
         } else {
             console.log(!saldoValid ? 'Sem saldo' : 'Saldo insuficiente');
         }
@@ -50,5 +51,6 @@ contaCorrente02 =  new ContaCorrente();
 contaCorrente02.agencia = '2001';
 
 contaCorrente01.depositar(1000)
-contaCorrente01.sacar(100);
+const valorSacado = contaCorrente01.sacar(10);
+console.log(valorSacado ? `sacado: R$${valorSacado.toFixed(2)}`:'')
 contaCorrente01.toString();

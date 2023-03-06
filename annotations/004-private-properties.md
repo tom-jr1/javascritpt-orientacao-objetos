@@ -15,5 +15,5 @@ class ClassName {
 }
 ~~~
 
-com essa definição fica restrito a  alteração fora da proria class.
+com essa definição fica restrito a  alteração fora da propria class.
 
