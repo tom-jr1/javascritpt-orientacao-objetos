@@ -2,6 +2,7 @@
 export class ContaCorrente {
     agencia;
     #saldo;
+    cliente;
 
     constructor() {
         this.#saldo = 0.0;
